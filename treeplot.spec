@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.cnrs-gif.fr/pge/bioinfo/sources/%{name}-%{version}.tar.gz
+# Source0-md5:	586ced06c70ed09f77f4a9cf8854fbf8
 Patch0:		%{name}-c++.patch
 URL:		http://www.cnrs-gif.fr/pge/bioinfo/treeplot/index.php?lang=en
 BuildRequires:	automake
