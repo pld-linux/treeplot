@@ -1,4 +1,5 @@
 Summary:	Phylogenetic tree file converter
+Summary(pl):	Konwerter plików drzew filogenetycznych
 Name:		treeplot
 Version:	0.7
 Release:	1
@@ -7,14 +8,19 @@ Group:		Applications/Graphics
 Source0:	http://www.cnrs-gif.fr/pge/bioinfo/sources/%{name}-%{version}.tar.gz
 Patch0:		%{name}-c++.patch
 URL:		http://www.cnrs-gif.fr/pge/bioinfo/treeplot/index.php?lang=en
+BuildRequires:	automake
 BuildRequires:	libplotter-devel
-BuildRequires:	libstdc++-devel
 BuildRequires:	libpng-devel
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Phylogenetic tree file converter (Phylip, Gif, Postscript, Adobe
 Illustrator, xfig...).
+
+%description -l pl
+Konwerter plików drzew filogenetycznych (Phylip, Gif, Postscript,
+Adobe Illustrator, xfig...).
 
 %prep
 %setup -q
