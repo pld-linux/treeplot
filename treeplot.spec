@@ -5,6 +5,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.cnrs-gif.fr/pge/bioinfo/sources/%{name}-%{version}.tar.gz
+Patch0:		%{name}-c++.patch
 URL:		http://www.cnrs-gif.fr/pge/bioinfo/treeplot/index.php?lang=en
 BuildRequires:	libplotter-devel
 BuildRequires:	libstdc++-devel
@@ -17,6 +18,7 @@ Illustrator, xfig...).
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 install %{_datadir}/automake/config.* .
