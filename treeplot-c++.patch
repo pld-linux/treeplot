@@ -1,0 +1,39 @@
+Binary files treeplot-0.7.org/treeplot/.vecteurs.cpp.swp and treeplot-0.7/treeplot/.vecteurs.cpp.swp differ
+diff -urN treeplot-0.7.org/treeplot/internat.h treeplot-0.7/treeplot/internat.h
+--- treeplot-0.7.org/treeplot/internat.h	Sun Apr  6 00:11:37 2003
++++ treeplot-0.7/treeplot/internat.h	Sun Apr  6 00:12:38 2003
+@@ -30,6 +30,8 @@
+ # else
+ #  ifndef _LIBINTL_H
+ #   include<libintl.h>
++#  endif
++#  ifndef _
+ #   define _(String) gettext (String)
+ #  endif
+ # endif
+diff -urN treeplot-0.7.org/treeplot/treeplotter.h treeplot-0.7/treeplot/treeplotter.h
+--- treeplot-0.7.org/treeplot/treeplotter.h	Sun Apr  6 00:11:37 2003
++++ treeplot-0.7/treeplot/treeplotter.h	Sun Apr  6 00:14:28 2003
+@@ -86,8 +86,8 @@
+ 	double _decolleX;
+ 	double _decolleY;
+ 
+-friend PointPlotArbreInd;
+-friend PointPlotArbreNoeud;
++friend class PointPlotArbreInd;
++friend class PointPlotArbreNoeud;
+ 
+ protected: // Protected methods
+   /** Dessin de l'arbre */
+diff -urN treeplot-0.7.org/treeplot/vecteurs.h treeplot-0.7/treeplot/vecteurs.h
+--- treeplot-0.7.org/treeplot/vecteurs.h	Sun Apr  6 00:11:37 2003
++++ treeplot-0.7/treeplot/vecteurs.h	Sun Apr  6 00:12:06 2003
+@@ -26,6 +26,8 @@
+ #include <vector>
+ #include <string>
+ 
++using namespace std;
++
+ class VecteurLD:public vector<long double>  {
+ };
+ 
