@@ -1,4 +1,3 @@
-Binary files treeplot-0.7.org/treeplot/.vecteurs.cpp.swp and treeplot-0.7/treeplot/.vecteurs.cpp.swp differ
 diff -urN treeplot-0.7.org/treeplot/internat.h treeplot-0.7/treeplot/internat.h
 --- treeplot-0.7.org/treeplot/internat.h	Sun Apr  6 00:11:37 2003
 +++ treeplot-0.7/treeplot/internat.h	Sun Apr  6 00:12:38 2003
@@ -27,13 +26,14 @@ diff -urN treeplot-0.7.org/treeplot/treeplotter.h treeplot-0.7/treeplot/treeplot
    /** Dessin de l'arbre */
 diff -urN treeplot-0.7.org/treeplot/vecteurs.h treeplot-0.7/treeplot/vecteurs.h
 --- treeplot-0.7.org/treeplot/vecteurs.h	Sun Apr  6 00:11:37 2003
-+++ treeplot-0.7/treeplot/vecteurs.h	Sun Apr  6 00:12:06 2003
-@@ -26,6 +26,8 @@
++++ treeplot-0.7/treeplot/vecteurs.h	Sun Apr  6 00:20:04 2003
+@@ -25,6 +25,9 @@
+ 
  #include <vector>
  #include <string>
- 
-+using namespace std;
++#include <iomanip.h>
 +
++using namespace std;
+ 
  class VecteurLD:public vector<long double>  {
  };
- 
