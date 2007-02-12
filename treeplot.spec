@@ -1,5 +1,5 @@
 Summary:	Phylogenetic tree file converter
-Summary(pl.UTF-8):   Konwerter plików drzew filogenetycznych
+Summary(pl.UTF-8):	Konwerter plików drzew filogenetycznych
 Name:		treeplot
 Version:	0.7
 Release:	1
