@@ -1,5 +1,5 @@
 Summary:	Phylogenetic tree file converter
-Summary(pl):	Konwerter plików drzew filogenetycznych
+Summary(pl.UTF-8):   Konwerter plikÃ³w drzew filogenetycznych
 Name:		treeplot
 Version:	0.7
 Release:	1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Phylogenetic tree file converter (Phylip, Gif, Postscript, Adobe
 Illustrator, xfig...).
 
-%description -l pl
-Konwerter plików drzew filogenetycznych (Phylip, Gif, Postscript,
+%description -l pl.UTF-8
+Konwerter plikÃ³w drzew filogenetycznych (Phylip, Gif, Postscript,
 Adobe Illustrator, xfig...).
 
 %prep
